@@ -156,7 +156,7 @@ return false;
 function getLessonList(sortId , chara_id, complete){
 var temp_id = chara_id ? chara_id : chara;
 var type = (typeof(sortId) !== 'undefined') ? sortId : '1';
-var url  = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fexchange%3Fl_frm%3DMypage_index_1%26rnd%3D286520947';
+var url  = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fexchange%3Fl_frm%3DMypage_index_1%26rnd%3D885197223';
 $.ajax({
 type: 'POST',
 url: url.replace('exchange', 'petit_cg/ajax_lesson_list?rnd='+(Math.floor( Math.random()*1000000))),
@@ -357,7 +357,7 @@ showHaveLesson();
 var temp_id = position;
 $.ajax({
 type: 'POST',
-url: 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fpetit_cg%2Fajax_start_lesson%3Fl_frm%3DMypage_index_1%26rnd%3D155009578',
+url: 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fpetit_cg%2Fajax_start_lesson%3Fl_frm%3DMypage_index_1%26rnd%3D199280392',
 dataType: 'json',
 data: {
 "lesson_id": data.lesson_id,
@@ -368,7 +368,7 @@ data: {
 .done(function(data) {
 var $unique = $('#unique_'+data.deck_position);
 $unique.off();
-var instant_url = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fpetit_cg%2Findex%2F__position__%3Fview_page%3D2%26l_frm%3DMypage_index_1%26rnd%3D117551052';
+var instant_url = 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fpetit_cg%2Findex%2F__position__%3Fview_page%3D2%26l_frm%3DMypage_index_1%26rnd%3D278942383';
 instant_url = instant_url.replace('__position__', data.deck_position);
 $unique.removeClass().addClass('lesson_panel').empty();
 var uniqueChild = document.createElement('div');
@@ -442,7 +442,7 @@ function lessonFinish(data , position){
 var current_chara = position ? position : chara;
 $.ajax({
 type: 'POST',
-url: 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fpetit_cg%2Fajax_finish_lesson%3Fl_frm%3DMypage_index_1%26rnd%3D459832622',
+url: 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fpetit_cg%2Fajax_finish_lesson%3Fl_frm%3DMypage_index_1%26rnd%3D316806492',
 dataType: 'json',
 data: {
 "idol_id": petit_id,
@@ -534,7 +534,7 @@ var loading_images = ["/idolmaster/image_sp//ui/rich/quest/loading.gif","/idolma
 var loading_image_ami = '/idolmaster/image_sp/ui/rich/quest/loading_ami.gif';
 var native_app_flg = false;
 var is_debug = false;
-var now_time = 1660970259;
+var now_time = 1660973494;
 var idolArr = [];
 var user_name = "Max";
 var url_ajax_get_card_comment = '/idolmaster/mypage/ajax_get_card_comment';
@@ -552,8 +552,8 @@ idolArr['atk'][0]['attribute'] = '3';
 idolArr['atk'][0]['attribute_str'] = 'passion';
 idolArr['atk'][0]['rarity'] = '6';
 idolArr['atk'][0]['cost'] = '27';
-idolArr['atk'][0]['comment_column_num'] = '1';
-idolArr['atk'][0]['card_comment'] = "良い子､良い子はいませんか～";
+idolArr['atk'][0]['comment_column_num'] = '2';
+idolArr['atk'][0]['card_comment'] = "山越え､街越え､どこへでも♪";
 idolArr['atk'][0]['voice_path'] = '';
 idolArr['atk'][1] = [];
 idolArr['atk'][1]['img_path'] = '/idolmaster/image_sp/card/ls/990d4c7b388f9a05cbb860b1a385a2cc.jpg';
@@ -578,9 +578,9 @@ idolArr['atk'][2]['attribute'] = '3';
 idolArr['atk'][2]['attribute_str'] = 'passion';
 idolArr['atk'][2]['rarity'] = '6';
 idolArr['atk'][2]['cost'] = '26';
-idolArr['atk'][2]['comment_column_num'] = '5';
-idolArr['atk'][2]['card_comment'] = "悪魔に身を委ねてみるのも､悪くはないわよ､Max♪";
-idolArr['atk'][2]['voice_path'] = '/idolmaster/sound/3563502/741ce7d44f1fe2f58910bf6e7667082b.mp4';
+idolArr['atk'][2]['comment_column_num'] = '2';
+idolArr['atk'][2]['card_comment'] = "刺激的な夜が､始まるわね♪";
+idolArr['atk'][2]['voice_path'] = '/idolmaster/sound/3563502/e86a01d6328d9b0d29e0813ae920c251.mp4';
 idolArr['atk'][3] = [];
 idolArr['atk'][3]['img_path'] = '/idolmaster/image_sp/card/ls/35ffa04240179c63a823a29fcc63bc61.jpg';
 idolArr['atk'][3]['img_path_large'] = '/idolmaster/image_sp/card/quest/35ffa04240179c63a823a29fcc63bc61.jpg';
@@ -591,9 +591,9 @@ idolArr['atk'][3]['attribute'] = '3';
 idolArr['atk'][3]['attribute_str'] = 'passion';
 idolArr['atk'][3]['rarity'] = '6';
 idolArr['atk'][3]['cost'] = '27';
-idolArr['atk'][3]['comment_column_num'] = '2';
-idolArr['atk'][3]['card_comment'] = "ﾑﾈｷｭﾝしたｶ? してほしいﾅ～♪";
-idolArr['atk'][3]['voice_path'] = '/idolmaster/sound/3569602/5201ae76be14da5b628d3985f49875a6.mp4';
+idolArr['atk'][3]['comment_column_num'] = '5';
+idolArr['atk'][3]['card_comment'] = "Maxのｺﾄも､ﾅﾀｰﾘｱがｺｰﾃﾞしたいﾅ! きっとｶﾜｲｲｿﾞ♪";
+idolArr['atk'][3]['voice_path'] = '/idolmaster/sound/3569602/69c5caafa9060caa54e3d8cf7ed88289.mp4';
 idolArr['atk'][4] = [];
 idolArr['atk'][4]['img_path'] = '/idolmaster/image_sp/card/ls/9159993bdcb5c6e4eb6914dde0cf1955.jpg';
 idolArr['atk'][4]['img_path_large'] = '/idolmaster/image_sp/card/quest/9159993bdcb5c6e4eb6914dde0cf1955.jpg';
@@ -604,9 +604,9 @@ idolArr['atk'][4]['attribute'] = '3';
 idolArr['atk'][4]['attribute_str'] = 'passion';
 idolArr['atk'][4]['strength_level'] = 0;
 idolArr['atk'][4]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_3.png%3Fv%3D19700101090000';
-idolArr['atk'][4]['comment_column_num'] = '4';
-idolArr['atk'][4]['card_comment'] = "時間がゆっくり流れてるね｡水辺のﾏｰﾒｲﾄﾞってｶﾝｼﾞ♪";
-idolArr['atk'][4]['voice_path'] = '/idolmaster/sound/3549702/9cea1ed0e30176651b08c202ac4f7f23.mp4';
+idolArr['atk'][4]['comment_column_num'] = '3';
+idolArr['atk'][4]['card_comment'] = "どっちが先に､気づくかな…?";
+idolArr['atk'][4]['voice_path'] = '/idolmaster/sound/3549702/50039cb03e33d1905c7bdb9b3cdcb9b5.mp4';
 idolArr['def'][0] = [];
 idolArr['def'][0]['img_path'] = '/idolmaster/image_sp/card/ls/0ff9b7eb5f9cfb16e7ec798cd4fdbde0.jpg';
 idolArr['def'][0]['img_path_large'] = '/idolmaster/image_sp/card/quest/0ff9b7eb5f9cfb16e7ec798cd4fdbde0.jpg';
@@ -617,9 +617,9 @@ idolArr['def'][0]['attribute'] = '3';
 idolArr['def'][0]['attribute_str'] = 'passion';
 idolArr['def'][0]['rarity'] = '6';
 idolArr['def'][0]['cost'] = '26';
-idolArr['def'][0]['comment_column_num'] = '3';
-idolArr['def'][0]['card_comment'] = "闇夜を統べるのは､このｱﾀｼ!";
-idolArr['def'][0]['voice_path'] = '/idolmaster/sound/3563502/299fa159db830330f9b24cd33df8609e.mp4';
+idolArr['def'][0]['comment_column_num'] = '5';
+idolArr['def'][0]['card_comment'] = "悪魔に身を委ねてみるのも､悪くはないわよ､Max♪";
+idolArr['def'][0]['voice_path'] = '/idolmaster/sound/3563502/741ce7d44f1fe2f58910bf6e7667082b.mp4';
 idolArr['def'][1] = [];
 idolArr['def'][1]['img_path'] = '/idolmaster/image_sp/card/ls/d6c9d65169ac9c2190ca07ae5f53d225.jpg';
 idolArr['def'][1]['img_path_large'] = '/idolmaster/image_sp/card/quest/d6c9d65169ac9c2190ca07ae5f53d225.jpg';
@@ -630,9 +630,9 @@ idolArr['def'][1]['attribute'] = '3';
 idolArr['def'][1]['attribute_str'] = 'passion';
 idolArr['def'][1]['rarity'] = '6';
 idolArr['def'][1]['cost'] = '26';
-idolArr['def'][1]['comment_column_num'] = '4';
-idolArr['def'][1]['card_comment'] = "太陽みたいに眩しくて､陽だまりのように暖かい私でいたいな";
-idolArr['def'][1]['voice_path'] = '/idolmaster/sound/3563302/dc6b99c9ad0d2320f1b63b3bc24e1045.mp4';
+idolArr['def'][1]['comment_column_num'] = '3';
+idolArr['def'][1]['card_comment'] = "どこまでだって照らしますよ♪";
+idolArr['def'][1]['voice_path'] = '/idolmaster/sound/3563302/4a48125570ac085a128b12d87ac8f362.mp4';
 idolArr['def'][2] = [];
 idolArr['def'][2]['img_path'] = '/idolmaster/image_sp/card/ls/8e572241ed5b654dd6bca06c713408fa.jpg';
 idolArr['def'][2]['img_path_large'] = '/idolmaster/image_sp/card/quest/8e572241ed5b654dd6bca06c713408fa.jpg';
@@ -656,9 +656,9 @@ idolArr['def'][3]['attribute'] = '3';
 idolArr['def'][3]['attribute'] = '3';
 idolArr['def'][3]['attribute_str'] = 'passion';
 idolArr['def'][3]['rarity'] = '6';
-idolArr['def'][3]['comment_column_num'] = '5';
-idolArr['def'][3]['card_comment'] = "Maxちゃんも和のわｰるどに溶けよぉ♪にょわわわ!";
-idolArr['def'][3]['voice_path'] = '/idolmaster/sound/3568702/da8bc6e3b72e64facb3c6726eefa11fb.mp4';
+idolArr['def'][3]['comment_column_num'] = '1';
+idolArr['def'][3]['card_comment'] = "はぴはぴ模様が溢れ出すのだ☆";
+idolArr['def'][3]['voice_path'] = '/idolmaster/sound/3568702/9c89ae787cba4db56d1fcc65e942bed5.mp4';
 idolArr['def'][4] = [];
 idolArr['def'][4]['img_path'] = '/idolmaster/image_sp/card/ls/9159993bdcb5c6e4eb6914dde0cf1955.jpg';
 idolArr['def'][4]['img_path_large'] = '/idolmaster/image_sp/card/quest/9159993bdcb5c6e4eb6914dde0cf1955.jpg';
@@ -669,9 +669,9 @@ idolArr['def'][4]['attribute'] = '3';
 idolArr['def'][4]['attribute_str'] = 'passion';
 idolArr['def'][4]['strength_level'] = 0;
 idolArr['def'][4]['strength_level_img_path'] = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2Fmobamas.net%2Fidolmaster%2Fimage_sp%2Fc_effect%2Fstrengthen%2Fls%2Fls_0_3.png%3Fv%3D19700101090000';
-idolArr['def'][4]['comment_column_num'] = '4';
-idolArr['def'][4]['card_comment'] = "時間がゆっくり流れてるね｡水辺のﾏｰﾒｲﾄﾞってｶﾝｼﾞ♪";
-idolArr['def'][4]['voice_path'] = '/idolmaster/sound/3549702/9cea1ed0e30176651b08c202ac4f7f23.mp4';
+idolArr['def'][4]['comment_column_num'] = '3';
+idolArr['def'][4]['card_comment'] = "どっちが先に､気づくかな…?";
+idolArr['def'][4]['voice_path'] = '/idolmaster/sound/3549702/50039cb03e33d1905c7bdb9b3cdcb9b5.mp4';
 idolArr['dialogue_info'] = [];
 </script>
 <script src="/idolmaster/js/min/mypage.min.js"></script>
